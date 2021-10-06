@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ajax Tutorial </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>ID:</th>
+                <td><input type="number" id="id"> </td>
+            </tr> 
+        
+           <tr>
+               <th>NOMBRE:</th>
+               <td><input type="text" id="nombre"> </td>
+           </tr> 
+           <tr>
+                <th>VALOR: $</th>
+                <td><input type="number" id="valor"> </td>
+            </tr> 
+            <tr>
+                <th>FECHA:</th>
+                <td><input type="text" id="fecha"> </td>
+            </tr> 
+            <tr>
+                <th>DESCRIPCION:</th>
+                <td><input type="TEXT" id="descripcion"> </td>
+            </tr> 
+            <tr>
+                <th>USUARIO:</th>
+                <td><input type="TEXT" id="nombre_usuario"> </td>
+            </tr> 
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="CONSULTAR" onclick="traerInformacion()"> &nbsp;&nbsp;&nbsp;
+                    <input type="button" value="GUARDAR" onclick="guardarInformacion()"> &nbsp;&nbsp;&nbsp;
+                    <input type="button" value="MODIFICAR" onclick="editarInformacion()"> &nbsp;&nbsp;&nbsp;
+                    <input type="button" value="BORRAR" onclick="borrarInformacion()"> &nbsp;&nbsp;&nbsp;
+                </td>
+            </tr> 
+            
+        </table>
+        <div id="resultado"></div>
+    </body>
+</html>
